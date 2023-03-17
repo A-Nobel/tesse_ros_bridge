@@ -30,7 +30,7 @@ class TesseROSWrapper:
         # Networking parameters:
         self.client_ip     = rospy.get_param("~client_ip", "127.0.0.1")
         self.self_ip       = rospy.get_param("~self_ip", "127.0.0.1")
-        self.position_port = rospy.get_param("~position_port", 9000)
+        self.position_port = rospy.get_param("~position_port", 9007)
         self.metadata_port = rospy.get_param("~metadata_port", 9001)
         self.image_port    = rospy.get_param("~image_port", 9002)
         self.udp_port      = rospy.get_param("~udp_port", 9004)
