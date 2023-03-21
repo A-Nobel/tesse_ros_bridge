@@ -30,11 +30,11 @@ class TesseROSWrapper:
         # Networking parameters:
         self.client_ip     = rospy.get_param("~client_ip", "127.0.0.1")
         self.self_ip       = rospy.get_param("~self_ip", "127.0.0.1")
-        self.position_port = rospy.get_param("~position_port", 9007)
-        self.metadata_port = rospy.get_param("~metadata_port", 9001)
-        self.image_port    = rospy.get_param("~image_port", 9002)
-        self.udp_port      = rospy.get_param("~udp_port", 9004)
-        self.step_port     = rospy.get_param("~step_port", 9005)
+        self.position_port = rospy.get_param("~position_port", 19000)
+        self.metadata_port = rospy.get_param("~metadata_port", 19001)
+        self.image_port    = rospy.get_param("~image_port", 19002)
+        self.udp_port      = rospy.get_param("~udp_port", 19004)
+        self.step_port     = rospy.get_param("~step_port", 19005)
 
         # Set data to publish
         # `publish_mono_stereo` is true to publish one channel stereo images
